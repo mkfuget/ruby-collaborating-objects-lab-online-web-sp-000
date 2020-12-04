@@ -1,4 +1,11 @@
 class MP3Importer
+  
+  def initialize(path)
+    names = Dir.entries(folder)
+    names = names.select{|x| x.match(/.*3/) != nil}
+    @path = names 
+  end
+  
   def initialize(folder)
     names = Dir.entries(folder)
     names = names.select{|x| x.match(/.*3/) != nil}
