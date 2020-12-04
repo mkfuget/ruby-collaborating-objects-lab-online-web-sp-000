@@ -6,8 +6,9 @@ class MP3Importer
     @path = path 
   end
   
-  def 
-    
+  def files
+    names = Dir.entries(@path)
+    return names.select{|x| x.match(/.*3/) != nil}
   end
   
   def initialize(folder)
