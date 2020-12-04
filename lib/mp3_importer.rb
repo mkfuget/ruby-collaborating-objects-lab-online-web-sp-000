@@ -13,12 +13,7 @@ class MP3Importer
   
   def import
     files.each do |file_data|
-      data = file_data.split(" - ")
-      song_name = data[1]
-      artist_name = data[0]
-      current_artist = Artist.new(artist_name)
-      current_song = Song.new(song_name)
-      current_artist.add_song(current_song)
+      Song.new_by_filename(file_data)
     end
   end 
 end
