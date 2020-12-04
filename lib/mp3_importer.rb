@@ -1,7 +1,7 @@
 class MP3Importer
   def initialize(folder)
     names = Dir.entries(folder)
-    puts names
+    names = names.select{
     
 
   end 
