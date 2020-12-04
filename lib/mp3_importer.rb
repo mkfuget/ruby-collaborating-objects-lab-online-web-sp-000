@@ -11,7 +11,7 @@ class MP3Importer
     return names.select{|x| x.match(/.*3/) != nil}
   end
   
-  def initialize(folder)
+  def import(folder)
     names = Dir.entries(folder)
     names = names.select{|x| x.match(/.*3/) != nil}
     names.each do |file_data|
