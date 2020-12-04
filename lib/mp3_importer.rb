@@ -1,6 +1,7 @@
 class MP3Importer
   def initialize(files)
-    names = Dir["/path/to/search/**/*.mp3"].split(" - ")
+    names = Dir.entries(filename).split(" - ")
+    puts names
     
 
   end 
