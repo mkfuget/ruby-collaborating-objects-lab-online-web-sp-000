@@ -1,6 +1,6 @@
 class MP3Importer
-  def initialize(files)
-    names = Dir.entries(files).split(" - ")
+  def initialize(folder)
+    names = Dir.entries(folder)
     puts names
     
 
