@@ -1,5 +1,7 @@
 class MP3Importer
   
+  attr_accessor :path
+  
   def initialize(path)
     names = Dir.entries(folder)
     names = names.select{|x| x.match(/.*3/) != nil}
