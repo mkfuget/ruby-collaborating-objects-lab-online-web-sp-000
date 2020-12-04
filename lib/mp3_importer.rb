@@ -6,7 +6,9 @@ class MP3Importer
       data = file_data.split(" - ")
       song_name = data[1]
       artist_name = data[0]
-    
-
+      current_artist = Artist.new(artist_name)
+      current_song = Song.new(song_name)
+      current_artist.add_song(current_song)
+    end
   end 
 end
