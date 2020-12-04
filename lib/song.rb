@@ -23,7 +23,7 @@ class Song
     
   def artist_name=(name)
     current_artist = Artist.find_or_create_by_name(artist_name)
-    @artist = current_artist
+    self.artist = current_artist
   end
 
 
